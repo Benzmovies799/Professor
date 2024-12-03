@@ -11,9 +11,9 @@ def is_enabled(value, default):
 
 
 # PyroClient Setup 
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['16582302'])
+API_HASH = environ['336ae5acc37e4031e98ca682557cca66']
+BOT_TOKEN = environ['8000327637:AAEeM6nq1O755dX6Eq1yjBT6ztPNN8-xQOc']
 
 # Bot settings
 WEB_SUPPORT = bool(environ.get("WEBHOOK", 'True')) # for web support on/off
@@ -22,7 +22,7 @@ UPTIME = time.time()
 
 # Admins, Channels & Users
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '957055438').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -32,7 +32,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://tarunbandreddi6565:V54QO25A72PicCfv@cluster0.x0u97.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
@@ -44,7 +44,7 @@ START_MESSAGE = environ.get('START_MESSAGE', script.START_TXT)
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", script.BUTTON_LOCK_TEXT)
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', script.FORCE_SUB_TEXT)
 
-WELCOM_PIC = environ.get("WELCOM_PIC", "")
+WELCOM_PIC = environ.get("WELCOM_PIC", "https://envs.sh/P0O.jpg")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", script.WELCOM_TEXT)
 PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
@@ -52,13 +52,13 @@ BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
 RemoveBG_API = environ.get("RemoveBG_API", "")
 
 # url shortner
-SHORT_URL = environ.get("SHORT_URL")
-SHORT_API = environ.get("SHORT_API")
+SHORT_URL = environ.get("http://Shrinkearn.com")
+SHORT_API = environ.get("55f4c7d964ebb8ef7bf3dda75185e4aca870c285")
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MKN_BOTZ_DISCUSSION_GROUP')
+LOG_CHANNEL = int(environ.get('-1001942699601', 0))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+veG2PpVpZQ03ZDYx')
 P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
@@ -74,7 +74,6 @@ MELCOW_NEW_USERS = is_enabled(environ.get('MELCOW_NEW_USERS', "True"), True)
 PROTECT_CONTENT = is_enabled(environ.get('PROTECT_CONTENT', "False"), False)
 PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "True"), True)
 LOG_MSG = "{} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ....✨\n\n🗓️ Dᴀᴛᴇ : {}\n⏰ Tɪᴍᴇ : {}\n\n🖥️ Rᴇᴏᴩ: {}\n🉐 Vᴇʀsɪᴏɴ: {}\n🧾 Lɪᴄᴇɴꜱᴇ: {}\n©️ Cᴏᴩʏʀɪɢʜᴛ: {}"
-
 
 
 
